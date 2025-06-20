@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/EnviroGensis/EnviroScenes/SplashScreen.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/WasteGame/WasteScene/WasteSort.unity
+    guid: 8fbced73fff7f674b9fb76e92f9b0ac7
+  - enabled: 1
+    path: Assets/MemoryGame/MemoryScenes/MemoryGamePlay.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/MemoryGame/MemoryScenes/MemoryMenu.unity
+    guid: a77d4b24f26caee4780b2d7d37fda804
+  - enabled: 1
+    path: Assets/MemoryGame/MemoryScenes/MemorySuccess.unity
+    guid: fade1a29c33e75443b5e36baca5346bb
+  - enabled: 1
+    path: Assets/QuizGame/QuizScenes/Game.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/RiverGame/RiverScenes/level1Green.unity
+    guid: e1a7d18e672d5dd438d90d97f600ec78
+  - enabled: 1
+    path: Assets/RiverGame/RiverScenes/level4Gold.unity
+    guid: b8ecbfe5b1209c64bbf72d4dac9ec5fd
+  - enabled: 1
+    path: Assets/RiverGame/RiverScenes/level5Ice2.unity
+    guid: bd543cb15c8924e4aac1355be2e6b90e
+  - enabled: 1
+    path: Assets/RiverGame/RiverScenes/level6Fantasy.unity
+    guid: 39b08536774c2104ebe283df3a2818f4
+  - enabled: 1
+    path: Assets/RiverGame/RiverScenes/Menu.unity
+    guid: ad9c45ebab37bd74e8fdbde50d1731ad
+  - enabled: 1
+    path: Assets/EnviroGensis/EnviroScenes/EnviroGamePlay.unity
+    guid: 1afbc08c5fa414f4e8ba2642396d0835
+  m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
