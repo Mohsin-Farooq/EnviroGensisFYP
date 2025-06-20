@@ -47,6 +47,7 @@ namespace EnviroGenesis
             yield return new WaitForSeconds(1f);
 
             TheGame.Load();
+            
         }
 
         private IEnumerator NewRoutine()

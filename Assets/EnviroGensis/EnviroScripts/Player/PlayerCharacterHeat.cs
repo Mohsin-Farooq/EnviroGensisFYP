@@ -75,6 +75,8 @@ namespace EnviroGenesis
                 
                 current_heat += Mathf.Sign(dir) * change_speed * game_speed * Time.deltaTime;
                 character.Attributes.SetAttribute(AttributeType.Heat, current_heat);
+                
+              //  PlayerCharacterAttribute.instance.SetAttribute(AttributeType.Heat, current_heat);
             }
 
             //Deal damage
@@ -95,7 +97,7 @@ namespace EnviroGenesis
 
         public bool IsColdDamage()
         {
-            float current_heat = character.Attributes.GetAttributeValue(AttributeType.Heat);
+            float current_heat = character.Attributes.GetAttributeValue(AttributeType.Heat) ;
             return current_heat < damage_threshold + 0.01f;
         }
 
