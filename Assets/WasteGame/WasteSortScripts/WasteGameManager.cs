@@ -7,6 +7,7 @@ public class WasteGameManager : MonoBehaviour
 {
     [SerializeField] private GameObject pauseUI;
     [SerializeField] private GameObject gameOverUI;
+    [SerializeField] private GameObject settingPanel;
     private bool isPaused;
     public static WasteGameManager Instance;
 
@@ -98,6 +99,24 @@ public class WasteGameManager : MonoBehaviour
         gameOverUI.SetActive(false);
         RestartScoreValue();
         Resume();
+    }
+
+    public void openSetting()
+    {
+        if(settingPanel != null)
+        {
+            settingPanel.SetActive(true);
+            Time.timeScale = 0f;
+        }
+    }
+
+    public void closeSetting()
+    {
+        if (settingPanel != null)
+        {
+            settingPanel.SetActive(false);
+            Time.timeScale = 1f;
+        }
     }
 
     public void GoToMenu()

@@ -7,8 +7,8 @@ public class PauseMenu : MonoBehaviour {
 
 	public bool pause = false;
 	public bool soundOf = false;
-    public GameObject PausePanel;
-	public GameObject pauseBtn;
+	public GameObject PausePanel;
+	public Button pauseBtn;
 	public GameObject settingsPanel;
 	private Scene scene;
 
@@ -17,7 +17,7 @@ public class PauseMenu : MonoBehaviour {
 
 	private AudioSource audio;
 
-    public GameOver gOver;
+	public GameOver gOver;
 
 	void Start()
 	{     
@@ -34,15 +34,15 @@ public class PauseMenu : MonoBehaviour {
 
 	}
 
-    public void PauseM()
-    {
+	public void PauseM()
+	{
 			AudioListener.volume = 0;
-            PausePanel.SetActive(true);
-            Time.timeScale = 0.00001f;
-            pause = true;
-			pauseBtn.SetActive (false);
-            return;
-    }
+			PausePanel.SetActive(true);
+			Time.timeScale = 0.00001f;
+			pause = true;
+			pauseBtn.interactable = false;
+			return;
+	}
 
 	public void ResumeBut()
 	{
@@ -53,13 +53,14 @@ public class PauseMenu : MonoBehaviour {
 		PausePanel.SetActive(false);
 		Time.timeScale = 1;
 		pause = false;
-		pauseBtn.SetActive (true);
+        pauseBtn.interactable = true;
 		return;
 	}
 
 
 	public void SettingBut()
 	{
+		PausePanel.SetActive (false);
 		settingsPanel.SetActive (true);
 	}
 
@@ -72,23 +73,23 @@ public class PauseMenu : MonoBehaviour {
 		SceneManager.LoadScene (scene.name);
 	}
 
-    public void MainMenuBtn()
-    {
-        Time.timeScale = 1;
+	public void MainMenuBtn()
+	{
+		Time.timeScale = 1;
 		SceneManager.LoadScene ((int)SceneIndex.RiverMenu);
-    }
+	}
 
-    public void pauseGOver()
-    {
-        ResumeBut();
-        gOver.gameOver = true;
+	public void pauseGOver()
+	{
+		ResumeBut();
+		gOver.gameOver = true;
 
-    }
+	}
 
 
 	public void MusicOnOf()
 	{
-        if (audio.mute == true) {
+		if (audio.mute == true) {
 			audio.mute = false;
 			PlayerPrefs.SetString ("Music", "Yes");
 		} else {
@@ -100,16 +101,16 @@ public class PauseMenu : MonoBehaviour {
 	public void SoundOnOf()
 	{
 		if(!soundOf) {
-		    AudioListener.volume = 0;
+			AudioListener.volume = 0;
 			PlayerPrefs.SetString ("Sound", "No");
 			soundOf = true;
-		    return;
+			return;
 	   }
 		if (soundOf)  {
 			AudioListener.volume = 1;
 			PlayerPrefs.SetString ("Sound", "Yes");
 			soundOf = false;
-		    return;
+			return;
 	   }
 	
 	}
@@ -117,6 +118,7 @@ public class PauseMenu : MonoBehaviour {
 	public void OkBut()
 	{
 		settingsPanel.SetActive (false);
+		PausePanel.SetActive (true);
 	}
 
 

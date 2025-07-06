@@ -5,14 +5,13 @@ using System;
 
 public class Spawner : MonoBehaviour
 {
- //   [SerializeField] private GameObject parentOBJ;
+    [SerializeField] private GameObject parentOBJ;
     [SerializeField] private List<GameObject> residueList;
     [SerializeField] private float spawRate = 1f;
     [SerializeField] private GameObject spawnPoint;
     private WasteTypeListSO wasteTypeList;
     System.Random random = new System.Random();
     [SerializeField] private Canvas canvas;
-
     public static Spawner Instance;
     public float speed;
     private void Start()
@@ -37,12 +36,16 @@ public class Spawner : MonoBehaviour
     }
 
     private void Spawn()
-    {  
-        var i = random.Next(0, 23);
+    {
+        if (residueList == null || residueList.Count == 0) return;
+        if (spawnPoint == null || parentOBJ == null) return;
+
+        int i = random.Next(0, residueList.Count);
         GameObject residue = Instantiate(residueList[i], spawnPoint.transform.localPosition, Quaternion.identity);
-        residue.transform.SetParent(canvas.transform, false);
-   //     residue.transform.SetParent(parentOBJ.transform);
+
+        residue.transform.SetParent(parentOBJ.transform, false); // 'false' keeps local positioning/scaling
     }
+
 
     private void Update()
     {
