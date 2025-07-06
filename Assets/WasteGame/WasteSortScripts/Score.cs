@@ -37,13 +37,6 @@ public class Score : MonoBehaviour
     {
         Instance = this;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public string GeTPointScore()
     {
         return point.text;

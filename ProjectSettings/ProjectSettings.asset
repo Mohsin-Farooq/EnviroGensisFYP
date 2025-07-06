@@ -887,7 +887,7 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   scriptingDefineSymbols:
     Android: SURVIVAL_ENGINE;EnviroGenesis
-    Standalone: SURVIVAL_ENGINE
+    Standalone: SURVIVAL_ENGINE;EnviroGenesis
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
