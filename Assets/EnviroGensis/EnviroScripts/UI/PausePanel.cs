@@ -56,7 +56,11 @@ namespace EnviroGenesis
 
         public void OnClickNew()
         {
-            StartCoroutine(NewRoutine());
+          //  StartCoroutine(NewRoutine());
+          SceneFader.Instance.FadeInOut(() =>
+          {
+              TheGame.NewGame();
+          });
         }
 
         private IEnumerator LoadRoutine()
