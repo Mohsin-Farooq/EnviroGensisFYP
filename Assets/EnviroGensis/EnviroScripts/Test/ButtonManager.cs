@@ -11,10 +11,18 @@ public class ButtonManager : MonoBehaviour
     {
        PlayerCharacterAttribute.instance.AddAttribute(AttributeType.Happiness,20);
        PausePanel.Get().OnClickSave();
+       
+       
+       StartCoroutine(NewRoutine());
     }
-
-    private void OnApplicationPause(bool pause)
+    
+    private IEnumerator NewRoutine()
     {
-        throw new NotImplementedException();
+        BlackPanel.Get().Show();
+
+        yield return new WaitForSeconds(1f);
+
+        TheGame.Load();
     }
+    
 }
