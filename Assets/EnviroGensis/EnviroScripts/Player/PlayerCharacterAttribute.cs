@@ -97,13 +97,14 @@ namespace EnviroGenesis
                 AddAttribute(AttributeType.Happiness, sleep_target.sleep_hapiness_hour * game_speed * Time.deltaTime);
             }
         }
-		
+		// to change any attrib value .. value +=value
         public void AddAttribute(AttributeType type, float value)
         {
             if(HasAttribute(type))
                 CharacterData.AddAttributeValue(type, value, GetAttributeMax(type));
         }
-
+           
+        //setAttribute value   value = new value
         public void SetAttribute(AttributeType type, float value)
         {
             if (HasAttribute(type))
@@ -116,7 +117,7 @@ namespace EnviroGenesis
             if (adata != null)
                 CharacterData.SetAttributeValue(type, adata.start_value, GetAttributeMax(type));
         }
-
+      // get Attribute Value 
         public float GetAttributeValue(AttributeType type)
         {
             return CharacterData.GetAttributeValue(type);
