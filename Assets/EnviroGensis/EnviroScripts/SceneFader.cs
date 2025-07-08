@@ -73,7 +73,7 @@ public class SceneFader : MonoBehaviour
     {
         yield return StartCoroutine(FadeOut());
         SceneManager.LoadScene(sceneName);
-        yield return null;
+        yield return new  WaitForSeconds(2f);
         yield return StartCoroutine(FadeIn());
     }
 
@@ -84,4 +84,5 @@ public class SceneFader : MonoBehaviour
         yield return null;
         yield return StartCoroutine(FadeIn());
     }
+    
 }

@@ -60,9 +60,11 @@ namespace SickscoreGames.HUDNavigationSystem
 
 			// dont destroy on load
 			if (_HUDNavigationSystem != null && _HUDNavigationSystem.KeepAliveOnLoad)
-				DontDestroyOnLoad (this.gameObject);
+			{
+			DontDestroyOnLoad (this.gameObject);
+			}
 		}
-
+      
 
 		/// <summary>
 		/// Enable / Disable the canvas at runtime.
