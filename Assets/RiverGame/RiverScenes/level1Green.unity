@@ -20818,7 +20818,7 @@ MonoBehaviour:
   pause: 0
   soundOf: 0
   PausePanel: {fileID: 512524415}
-  pauseBtn: {fileID: 782674252}
+  pauseBtn: {fileID: 782674254}
   settingsPanel: {fileID: 1282981644}
   togMusic: {fileID: 1506838365}
   togSound: {fileID: 1486189614}
