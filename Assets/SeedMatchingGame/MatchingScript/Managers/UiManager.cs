@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UiManager : MonoBehaviour
 {
@@ -20,5 +21,10 @@ public class UiManager : MonoBehaviour
     public void DeactivateGameOverPanel()
     {
         GameOverPanel.SetActive(false);
+    }
+
+    public void OnClickHome()
+    {
+        SceneManager.LoadScene((int)SceneIndex.SeedMenu);
     }
 }
