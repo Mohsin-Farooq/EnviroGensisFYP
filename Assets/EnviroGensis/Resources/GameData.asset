@@ -24,4 +24,4 @@ MonoBehaviour:
   optim_refresh_rate: 0.5
   optim_distance_multiplier: 1
   optim_facing_offset: 10
-  optim_turn_off_gameobjects: 1
+  optim_turn_off_gameobjects: 0
