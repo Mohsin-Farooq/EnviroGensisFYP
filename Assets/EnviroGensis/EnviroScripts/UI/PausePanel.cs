@@ -46,14 +46,7 @@ namespace EnviroGenesis
             TheGame.Get().Save();
         }
 
-        public void OnClickLoad()
-        {
-            if (PlayerData.HasLastSave())
-                StartCoroutine(LoadRoutine());
-            else
-                StartCoroutine(NewRoutine());
-        }
-
+     
         public void OnClickNew()
         {
           //  StartCoroutine(NewRoutine());
@@ -63,6 +56,15 @@ namespace EnviroGenesis
           });
         }
 
+        
+        public void OnClickLoad()
+        {
+            //  StartCoroutine(NewRoutine());
+            SceneFader.Instance.FadeInOut(() =>
+            {
+                TheGame.Load();
+            });
+        }
         private IEnumerator LoadRoutine()
         {
             BlackPanel.Get().Show();

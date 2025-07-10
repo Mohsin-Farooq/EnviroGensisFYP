@@ -22,7 +22,7 @@ namespace EnviroGenesis
 
                     Destructible destruct = plant.GetDestructible();
                     TheAudio.Get().PlaySFX("destruct", destruct.death_sound);
-
+                   
                     destruct.SpawnLoots();
                 });
             }

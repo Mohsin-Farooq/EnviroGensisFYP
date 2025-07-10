@@ -7,6 +7,13 @@ using UnityEngine;
 public class ButtonManager : MonoBehaviour
 {  //game time 0.02s
     float game_speed = TheGame.Get().GetGameTimeSpeedPerSec();
+    public AudioClip audioSource;
+
+    private void Start()
+    {
+        TheAudio.Get().PlayMusic("ButtonManager", audioSource, 1,true);
+    }
+
     public void AttributeIncrease()
     {
        PlayerCharacterAttribute.instance.AddAttribute(AttributeType.Happiness,20);
