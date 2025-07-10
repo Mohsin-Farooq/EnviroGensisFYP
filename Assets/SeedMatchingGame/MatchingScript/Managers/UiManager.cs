@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class UiManager : MonoBehaviour
@@ -13,9 +10,10 @@ public class UiManager : MonoBehaviour
         instance = this;
     }
 
-
+    //huhiuhui
     public void ActivateGameOverPanel()
     {
+        Debug.Log("matched");
         GameOverPanel.SetActive(true);
     }
 
