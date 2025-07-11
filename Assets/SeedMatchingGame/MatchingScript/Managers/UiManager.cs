@@ -14,7 +14,7 @@ public class UiManager : MonoBehaviour
     
     public void ActivateGameOverPanel()
     {
-        Debug.Log("matched");
+        
         GameOverPanel.SetActive(true);
     }
 
