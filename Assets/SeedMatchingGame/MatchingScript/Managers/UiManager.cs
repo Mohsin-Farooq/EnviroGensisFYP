@@ -1,7 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UiManager : MonoBehaviour
 {
@@ -13,14 +11,20 @@ public class UiManager : MonoBehaviour
         instance = this;
     }
 
-
+    //huhiuhui
     public void ActivateGameOverPanel()
     {
+        Debug.Log("matched");
         GameOverPanel.SetActive(true);
     }
 
     public void DeactivateGameOverPanel()
     {
         GameOverPanel.SetActive(false);
+    }
+
+    public void OnClickHome()
+    {
+        SceneManager.LoadScene((int)SceneIndex.SeedMenu);
     }
 }
