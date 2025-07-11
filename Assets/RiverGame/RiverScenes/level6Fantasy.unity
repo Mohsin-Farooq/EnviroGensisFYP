@@ -6528,7 +6528,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1280112016
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7773,7 +7773,7 @@ MonoBehaviour:
   uiTexts:
   - {fileID: 0}
   - {fileID: 0}
-  scMngr: {fileID: 0}
+  scMngr: {fileID: 1914537498}
 --- !u!1 &1553369279
 GameObject:
   m_ObjectHideFlags: 0
@@ -20461,7 +20461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2036797085
 RectTransform:
   m_ObjectHideFlags: 0

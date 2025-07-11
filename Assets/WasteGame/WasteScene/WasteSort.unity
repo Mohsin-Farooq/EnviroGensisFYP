@@ -4537,7 +4537,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9be106b5d06ce604ab58d992dbe0f368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseUI: {fileID: 56490871}
   gameOverUI: {fileID: 446069209}
   settingPanel: {fileID: 1793000028}
 --- !u!4 &1288263902

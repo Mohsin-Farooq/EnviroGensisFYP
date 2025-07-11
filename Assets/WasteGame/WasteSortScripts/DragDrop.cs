@@ -102,7 +102,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IBegin
         if (transform.position.x < leftEdge)
         {
             Destroy(gameObject);
-            Score.Instance.SetTErroScore();
+            Score.Instance.SetTErroScoreAfterLeavingEdge();
         }
     }
 }

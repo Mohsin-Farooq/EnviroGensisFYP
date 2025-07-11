@@ -30,7 +30,7 @@ public class Score : MonoBehaviour
 
         life.text = $"{lifeCount}";
 
-        
+
     }
 
     private void Awake()
@@ -59,7 +59,19 @@ public class Score : MonoBehaviour
         erroCount++;
         erro.text = $"{erroCount}";
 
-        if(lifeCount <= 0)
+        if (lifeCount <= 0)
+        {
+            WasteGameManager.Instance.GameOver();
+        }
+
+        life.text = $"{lifeCount}";
+    }
+
+    public void SetTErroScoreAfterLeavingEdge()
+    {
+        lifeCount--;
+
+        if (lifeCount <= 0)
         {
             WasteGameManager.Instance.GameOver();
         }
