@@ -11,7 +11,7 @@ public class UiManager : MonoBehaviour
         instance = this;
     }
 
-    //huhiuhui
+    
     public void ActivateGameOverPanel()
     {
         Debug.Log("matched");
