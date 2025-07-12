@@ -147,7 +147,7 @@ public class GameManager : MonoBehaviour {
         bool isCorrect = CheckAnswers();
         FinishedQuestions.Add(currentQuestion);
 
-        UpdateScore((isCorrect) ? Questions[currentQuestion].AddScore : -Questions[currentQuestion].AddScore);
+        UpdateScore((isCorrect) ? Questions[currentQuestion].AddScore : 0);
 
         if (IsFinished)
         {
@@ -165,7 +165,14 @@ public class GameManager : MonoBehaviour {
             events.DisplayResolutionScreen(type, Questions[currentQuestion].AddScore);
         }
 
-        AudioManager.Instance.PlaySound((isCorrect) ? "CorrectSFX" : "IncorrectSFX");
+        if (isCorrect)
+        {
+            GeneralAudioManager.Instance.PlaySound(SoundType.Correct);
+        }
+        else
+        {
+            GeneralAudioManager.Instance.PlaySound(SoundType.Incorrect);
+        } 
 
         if (type != UIManager.ResolutionScreenType.Finish)
         {
@@ -210,7 +217,7 @@ public class GameManager : MonoBehaviour {
         {
             timeLeft--;
 
-            AudioManager.Instance.PlaySound("CountdownSFX");
+            GeneralAudioManager.Instance.PlaySound(SoundType.Countdown);
 
             if (timeLeft < totalTime / 2 && timeLeft > totalTime / 4)
             {
@@ -268,6 +275,11 @@ public class GameManager : MonoBehaviour {
     /// </summary>
     public void LoadQuestions(string question)
     {
+        if(GeneralAudioManager.Instance != null)
+        {
+            GeneralAudioManager.Instance.PlaySound(SoundType.Click);
+        }
+        
         if(question == "Climate Change & Global Warming")
         {
              objs = Resources.LoadAll("Climate Change & Global Warming", typeof(Question));

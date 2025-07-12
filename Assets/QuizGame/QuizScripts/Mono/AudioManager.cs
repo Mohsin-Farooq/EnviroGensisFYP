@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 [System.Serializable()]
 public struct SoundParameters
@@ -76,13 +77,6 @@ public class AudioManager : MonoBehaviour {
     /// <summary>
     /// Function that is called when the script instance is being loaded.
     /// </summary>
-    void Start()
-    {
-        if (string.IsNullOrEmpty(startupTrack) != true)
-        {
-            PlaySound(startupTrack);
-        }
-    }
 
     #endregion
 

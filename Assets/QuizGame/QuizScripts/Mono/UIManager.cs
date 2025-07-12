@@ -157,23 +157,29 @@ public class UIManager : MonoBehaviour {
         switch (type)
         {
             case ResolutionScreenType.Correct:
-                uIElements.ResolutionBG.color = parameters.CorrectBGColor;
-                uIElements.ResolutionStateInfoText.text = "CORRECT!";
+                //uIElements.ResolutionBG.color = parameters.CorrectBGColor;
+                //uIElements.ResolutionStateInfoText.text = "CORRECT!";
                 uIElements.ResolutionScoreText.text = "+" + score;
+                uIElements.ResolutionScoreText.color = Color.green;
                 break;
             case ResolutionScreenType.Incorrect:
-                uIElements.ResolutionBG.color = parameters.IncorrectBGColor;
+                //uIElements.ResolutionBG.color = parameters.IncorrectBGColor;
                 uIElements.ResolutionStateInfoText.text = "WRONG!";
-                uIElements.ResolutionScoreText.text = "-" + score;
+                uIElements.ResolutionScoreText.text = "0";
+                uIElements.ResolutionScoreText.color = Color.red;
                 break;
             case ResolutionScreenType.Finish:
-                uIElements.ResolutionBG.color = parameters.FinalBGColor;
-                uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
+                //uIElements.ResolutionBG.color = parameters.FinalBGColor;
+                //uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
 
                 StartCoroutine(CalculateScore());
                 uIElements.FinishUIElements.gameObject.SetActive(true);
+
+                // Idhr score ki value aik variable mei add karta jaa.
+
                 uIElements.HighScoreText.gameObject.SetActive(true);
-                uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
+                uIElements.HighScoreText.text = "Score: " + events.CurrentFinalScore;
+                //uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
                 break;
         }
     }
