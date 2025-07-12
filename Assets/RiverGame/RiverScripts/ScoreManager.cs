@@ -27,7 +27,7 @@ public class ScoreManager : MonoBehaviour {
 
             // Increase Happiness attribute using fish count
             PlayerCharacterAttribute.instance.AddAttribute(AttributeType.Happiness, fishValue);
-            TheGame.Get().Save();
+            
         }
         else
         {

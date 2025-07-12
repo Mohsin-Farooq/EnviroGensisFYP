@@ -12,6 +12,7 @@ namespace EnviroGenesis
         public static void RestartLevel()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+           // SceneManager.LoadScene((int)SceneIndex.EnviroGamePlay);
         }
 
         public static void GoTo(string scene)

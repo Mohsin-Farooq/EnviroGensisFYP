@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using EnviroGenesis;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour {
@@ -29,5 +30,6 @@ public class StartGame : MonoBehaviour {
     public void ExitGame()
     {
         SceneManager.LoadScene((int)SceneIndex.EnviroGamePlay);
+       
     }
 }

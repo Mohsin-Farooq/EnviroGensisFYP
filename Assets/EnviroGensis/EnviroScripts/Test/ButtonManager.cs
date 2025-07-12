@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using EnviroGenesis;
 using UnityEngine;
 
@@ -12,6 +10,7 @@ public class ButtonManager : MonoBehaviour
     private void Start()
     {
       //  TheAudio.Get().PlayMusic("ButtonManager", audioSource, 1,true);
+      TheGame.Get().Save();
     }
 
     public void AttributeIncrease()
