@@ -6154,7 +6154,7 @@ GameObject:
   - component: {fileID: 1755597314}
   - component: {fileID: 1755597313}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: UniversalAudioManger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
