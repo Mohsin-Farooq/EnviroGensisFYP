@@ -38,7 +38,8 @@ public class Bin : MonoBehaviour, IDropHandler
             {
                 animator.SetBool("animateLigth", false);
                 isOnBin = true;
-                
+             //  GenricAudioManager.instance.PlayMusicByName("sound");
+UniversalAudioManager.instance.PlaySoundByName("coins");
                 Score.Instance.SetTErroScore();
                 Destroy(grabResidue.gameObject);
                 isOnBin = false;

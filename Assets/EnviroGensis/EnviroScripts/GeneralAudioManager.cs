@@ -13,6 +13,8 @@ public class GeneralAudioManager : MonoBehaviour
     private string MUSIC_PREF;
     private string SOUND_PREF;
 
+    public static  GeneralAudioManager instance;
+    
     void Start()
     {
         sceneName = SceneManager.GetActiveScene().name;
