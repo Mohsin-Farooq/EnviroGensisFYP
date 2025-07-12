@@ -11,13 +11,13 @@ public class ButtonManager : MonoBehaviour
 
     private void Start()
     {
-        TheAudio.Get().PlayMusic("ButtonManager", audioSource, 1,true);
+      //  TheAudio.Get().PlayMusic("ButtonManager", audioSource, 1,true);
     }
 
     public void AttributeIncrease()
     {
-       PlayerCharacterAttribute.instance.AddAttribute(AttributeType.Happiness,20);
-       TheGame.Get().Save();
+    //   PlayerCharacterAttribute.instance.AddAttribute(AttributeType.Happiness,20);
+        TheGame.Get().Save();
        SceneFader.Instance.FadeInLoadFadeOut("Menu");
     }
 

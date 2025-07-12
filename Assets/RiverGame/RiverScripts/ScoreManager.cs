@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using EnviroGenesis;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour {
@@ -19,7 +20,20 @@ public class ScoreManager : MonoBehaviour {
 
     public void ResultScore () {
 
-        score.text = FishCount.text;
+        int fishValue;
+        if (int.TryParse(FishCount.text, out fishValue))
+        {
+            score.text = fishValue.ToString();
+
+            // Increase Happiness attribute using fish count
+            PlayerCharacterAttribute.instance.AddAttribute(AttributeType.Happiness, fishValue);
+            TheGame.Get().Save();
+        }
+        else
+        {
+            Debug.LogWarning("FishCount.text is not a valid number!");
+        }
+        
         bestScore.text = PlayerPrefs.GetInt ("Score").ToString();
         finalCoins.text = Coins.text;
         textCongr2.text = score.text;

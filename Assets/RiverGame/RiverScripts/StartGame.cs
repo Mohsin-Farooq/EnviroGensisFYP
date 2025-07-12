@@ -28,6 +28,6 @@ public class StartGame : MonoBehaviour {
 
     public void ExitGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene((int)SceneIndex.EnviroGamePlay);
     }
 }
