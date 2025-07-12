@@ -53,13 +53,13 @@ public class SeedBehaviour : MonoBehaviour
             isDragging = true;
             activeDraggingSeed = this;
 
-            startPosition = worldPosition;
+            startPosition = GetComponent<Renderer>().bounds.center;
             lineRenderer.enabled = true;
             lineRenderer.SetPosition(0, startPosition);
         }
     }
 
-    private void HandleMouseDrag(Vector3 worldPosition)
+    private void HandleMouseDrag(Vector3 worldPosition) 
     {
         if (!isDragging) return;
         lineRenderer.SetPosition(1, worldPosition);
@@ -73,6 +73,13 @@ public class SeedBehaviour : MonoBehaviour
 
         if (matcher.TryMatch(hit, matchID, out int treeID))
         {
+        
+            if (hit.collider.TryGetComponent(out GetTreeID tree))
+            {
+                
+                lineRenderer.SetPosition(1, tree.GetComponent<Renderer>().bounds.center);
+            }
+
             OnMatched();
         }
         else
