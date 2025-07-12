@@ -18,11 +18,7 @@ MonoBehaviour:
     _isCorrect: 0
   - _info: Vehicle emissions
     _isCorrect: 1
-  - _info: 'Rainfall
-
-      Rainfall
-
-'
+  - _info: Rainfall
     _isCorrect: 0
   - _info: Solar panels
     _isCorrect: 0

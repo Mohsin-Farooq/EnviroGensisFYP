@@ -147,7 +147,7 @@ public class GameManager : MonoBehaviour {
         bool isCorrect = CheckAnswers();
         FinishedQuestions.Add(currentQuestion);
 
-        UpdateScore((isCorrect) ? Questions[currentQuestion].AddScore : -Questions[currentQuestion].AddScore);
+        UpdateScore((isCorrect) ? Questions[currentQuestion].AddScore : 0);
 
         if (IsFinished)
         {

@@ -19,9 +19,9 @@ MonoBehaviour:
   - _info: Gas
     _isCorrect: 0
   - _info: Fat
-    _isCorrect: 1
-  - _info: Water
     _isCorrect: 0
+  - _info: Water
+    _isCorrect: 1
   _useTimer: 0
   _timer: 0
   _answerType: 1
