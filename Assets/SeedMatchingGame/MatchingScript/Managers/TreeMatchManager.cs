@@ -9,7 +9,11 @@ public class TreeMatchManager : ITreeMatcher
         if (hit.collider != null && hit.collider.TryGetComponent(out GetTreeID tree))
         {
             matchedTreeID = tree.GetMatchID();
-            return matchedTreeID == seedID;
+            if (matchedTreeID == seedID)
+            {
+                TreeTextFader.Instance.FadeInAndEnable(tree.GetTreeName());
+                return true;
+            }
         }
 
         return false;
