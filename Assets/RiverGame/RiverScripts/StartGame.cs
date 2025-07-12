@@ -29,7 +29,7 @@ public class StartGame : MonoBehaviour {
 
     public void ExitGame()
     {
-        SceneManager.LoadScene((int)SceneIndex.EnviroGamePlay);
+        SceneFader.Instance.FadeInLoadFadeOut("EnviroGamePlay");
        
     }
 }

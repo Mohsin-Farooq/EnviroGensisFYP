@@ -81,7 +81,7 @@ public class SceneFader : MonoBehaviour
     {
         yield return StartCoroutine(FadeOut());
         onFadeMiddle?.Invoke();
-        yield return null;
+        yield return new  WaitForSeconds(2f);
         yield return StartCoroutine(FadeIn());
     }
     
