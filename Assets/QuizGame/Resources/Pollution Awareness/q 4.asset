@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: q 4
   m_EditorClassIdentifier: 
-  _info: In which country did the flamenco dance originate?
+  _info: What does noise pollution primarily affect?
   _answers:
-  - _info: 'Spain '
+  - _info: Taste
+    _isCorrect: 0
+  - _info: Hearing
     _isCorrect: 1
-  - _info: Argentina
+  - _info: Sight
     _isCorrect: 0
-  - _info: Brazil
-    _isCorrect: 0
-  - _info: India
+  - _info: Smell
     _isCorrect: 0
   _useTimer: 1
   _timer: 10

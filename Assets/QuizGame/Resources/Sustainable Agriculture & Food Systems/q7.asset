@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: q 5
+  m_Name: q7
   m_EditorClassIdentifier: 
-  _info: What can individuals do to help reduce plastic pollution?
+  _info: Which of the following is a sustainable irrigation technique?
   _answers:
-  - _info: Burn plastic
+  - _info: Flood irrigation
     _isCorrect: 0
-  - _info: Use reusable bags
+  - _info: Drip irrigation
     _isCorrect: 1
-  - _info: Throw plastic in rivers
+  - _info: Overhead sprinklers
     _isCorrect: 0
-  - _info: Use more plastic bottles
+  - _info: Open channel irrigation
     _isCorrect: 0
-  _useTimer: 0
-  _timer: 5
+  _useTimer: 1
+  _timer: 20
   _answerType: 1
-  _addScore: 5
+  _addScore: 10

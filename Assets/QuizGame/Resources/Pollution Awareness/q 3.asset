@@ -12,16 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: q 3
   m_EditorClassIdentifier: 
-  _info: What instrument has 88 keys?
+  _info: What is the main cause of air pollution in urban areas?
   _answers:
-  - _info: Guitar
+  - _info: Tree plantation
     _isCorrect: 0
-  - _info: Violin
-    _isCorrect: 0
-  - _info: Drums
-    _isCorrect: 0
-  - _info: 'Piano '
+  - _info: Vehicle emissions
     _isCorrect: 1
+  - _info: 'Rainfall
+
+      Rainfall
+
+'
+    _isCorrect: 0
+  - _info: Solar panels
+    _isCorrect: 0
   _useTimer: 1
   _timer: 15
   _answerType: 1

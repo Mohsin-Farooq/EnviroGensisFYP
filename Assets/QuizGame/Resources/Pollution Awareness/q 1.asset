@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: q 1
   m_EditorClassIdentifier: 
-  _info: Who is the king of the Greek gods in mythology?
+  _info: Which of the following is not a type of pollution?
   _answers:
-  - _info: Poseidon
+  - _info: Air pollution
     _isCorrect: 0
-  - _info: Aries
+  - _info: Water pollution
     _isCorrect: 0
-  - _info: Hades
-    _isCorrect: 0
-  - _info: Zeus
+  - _info: Space pollution
     _isCorrect: 1
+  - _info: Noise pollution
+    _isCorrect: 0
   _useTimer: 0
   _timer: 10
   _answerType: 1

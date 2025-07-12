@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: q 6
   m_EditorClassIdentifier: 
-  _info: "Which artist is famous for painting \u201CThe Starry Night\u201D?"
+  _info: Which of the following is a natural cause of air pollution?
   _answers:
-  - _info: Claude Monet
-    _isCorrect: 0
-  - _info: Vincent van Gogh
+  - _info: Volcanic eruptions
     _isCorrect: 1
-  - _info: Rembrandt
+  - _info: Factories
     _isCorrect: 0
-  - _info: "Salvador Dal\xED"
+  - _info: Vehicle exhaust
+    _isCorrect: 0
+  - _info: Industrial waste
     _isCorrect: 0
   _useTimer: 1
   _timer: 10

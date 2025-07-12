@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: q 7
   m_EditorClassIdentifier: 
-  _info: What is a traditional Japanese drum called?
+  _info: What is the main reason for soil pollution?
   _answers:
-  - _info: Gong
+  - _info: Overgrazing
     _isCorrect: 0
-  - _info: Marimba
-    _isCorrect: 0
-  - _info: 'Taiko '
+  - _info: Use of chemical pesticides and Fertilizers
     _isCorrect: 1
-  - _info: Tabla
+  - _info: Afforestation
+    _isCorrect: 0
+  - _info: Organic farming
     _isCorrect: 0
   _useTimer: 0
   _timer: 10

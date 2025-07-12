@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: q 9
   m_EditorClassIdentifier: 
-  _info: Who is the Norse god of thunder?
+  _info: What is the best way to manage household waste?
   _answers:
-  - _info: Thor
+  - _info: Throwing it in open land
+    _isCorrect: 0
+  - _info: Dumping it in rivers
+    _isCorrect: 0
+  - _info: Segregating and recycling
     _isCorrect: 1
-  - _info: Loki
-    _isCorrect: 0
-  - _info: Odin
-    _isCorrect: 0
-  - _info: Freyja
+  - _info: Organic farming
     _isCorrect: 0
   _useTimer: 1
   _timer: 10

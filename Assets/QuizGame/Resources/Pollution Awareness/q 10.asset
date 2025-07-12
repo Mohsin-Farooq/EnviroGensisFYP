@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: q 10
   m_EditorClassIdentifier: 
-  _info: Which famous painting is known for its melting clocks?
+  _info: Which organization leads global efforts on environmental protection?
   _answers:
-  - _info: Guernica
+  - _info: WHO
     _isCorrect: 0
-  - _info: The Scream
+  - _info: IMF
     _isCorrect: 0
-  - _info: The Last Supper
-    _isCorrect: 0
-  - _info: The Persistence of Memory
+  - _info: 'UNEP '
     _isCorrect: 1
+  - _info: FIFA
+    _isCorrect: 0
   _useTimer: 1
   _timer: 15
   _answerType: 1

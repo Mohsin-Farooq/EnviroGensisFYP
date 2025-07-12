@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: q 8
   m_EditorClassIdentifier: 
-  _info: Which festival in India celebrates the victory of light over darkness?
+  _info: Which sector is a major contributor to water pollution?
   _answers:
-  - _info: 'Diwali '
+  - _info: Education
+    _isCorrect: 0
+  - _info: Tourism
+    _isCorrect: 0
+  - _info: Industrial sector
     _isCorrect: 1
-  - _info: Holi
-    _isCorrect: 0
-  - _info: Navratri
-    _isCorrect: 0
-  - _info: Eid
+  - _info: Banking
     _isCorrect: 0
   _useTimer: 1
   _timer: 15
