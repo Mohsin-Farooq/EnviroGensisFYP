@@ -66,13 +66,26 @@ public class UniversalAudioManager : MonoBehaviour
 
         musicSource.mute = !musicEnabled;
         soundSource.mute = !soundEnabled;
+        
+        
+        if (musicEnabled)
+        {
+            PlayMusicByName("BG"); 
+        }
+        
     }
 
     public void ToggleMusic(bool isOn)
     {
         musicSource.mute = !isOn;
         PlayerPrefs.SetInt(MUSIC_PREF, isOn ? 1 : 0);
+        if (isOn && !musicSource.isPlaying)
+        {
+            Debug.Log("Playing music");
+            PlayMusicByName("BG"); 
+        }
     }
+
 
     public void ToggleSound(bool isOn)
     {

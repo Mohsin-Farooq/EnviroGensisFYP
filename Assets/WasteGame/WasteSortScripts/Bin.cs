@@ -29,6 +29,7 @@ public class Bin : MonoBehaviour, IDropHandler
                 ligthAnim.transform.position = gameObject.transform.position;
                 ligthAnim.SetActive(true);
                 animator.SetBool("animateLigth", true);
+                UniversalAudioManager.instance.PlaySoundByName("Win");
                 isOnBin = true;
                 Score.Instance.SetTPointScore();
                 Destroy(grabResidue.gameObject);
@@ -39,7 +40,7 @@ public class Bin : MonoBehaviour, IDropHandler
                 animator.SetBool("animateLigth", false);
                 isOnBin = true;
              //  GenricAudioManager.instance.PlayMusicByName("sound");
-UniversalAudioManager.instance.PlaySoundByName("coins");
+               UniversalAudioManager.instance.PlaySoundByName("coins");
                 Score.Instance.SetTErroScore();
                 Destroy(grabResidue.gameObject);
                 isOnBin = false;
