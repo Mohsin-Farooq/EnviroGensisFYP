@@ -16,9 +16,13 @@ public class CheckAllSeedsMatched : MonoBehaviour
     {
        
         if (SeedBehaviour.ActiveSeedCount == 0)
-        {
-          //
-            UiManager.instance.ActivateGameOverPanel();
+        {    
+           Invoke(nameof(ShowPannel), 0.5f);
         }
+    }
+
+    private void ShowPannel()
+    {
+        UiManager.instance.ActivateGameOverPanel();
     }
 }
