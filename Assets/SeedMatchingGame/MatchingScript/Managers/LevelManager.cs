@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -43,11 +42,24 @@ public class LevelManager : MonoBehaviour
     public void EnablingSeeds(GameObject levelToActivate)
     {
         levelToActivate.SetActive(true);
-        SeedBehaviour[] seeds = levelToActivate.GetComponentsInChildren<SeedBehaviour>();
+        
+        SeedBehaviour[] seeds = levelToActivate.GetComponentsInChildren<SeedBehaviour>(true);
         foreach (var seed in seeds)
         {
             seed.enabled = true;
             seed.ResetSeedState();
+        }
+        
+        GetTreeID[] trees = levelToActivate.GetComponentsInChildren<GetTreeID>(true);
+        foreach (var tree in trees)
+        {
+            var label = tree.GetTreeName();
+            if (label != null)
+            {
+                 label.gameObject.SetActive(true);       
+                 label.alpha = 1f;                        
+                TreeTextFader.Instance.FadeOutAndDisable(label);
+            }
         }
     }
 }

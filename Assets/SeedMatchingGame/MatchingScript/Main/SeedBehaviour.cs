@@ -68,7 +68,6 @@ public class SeedBehaviour : MonoBehaviour
     private void HandleMouseUp(Vector3 worldPosition)
     {
         if (activeDraggingSeed != this) return;
-        Debug.Log("ggg");
         isDragging = false;
         RaycastHit2D hit = Physics2D.Raycast(worldPosition, Vector2.zero);
 
