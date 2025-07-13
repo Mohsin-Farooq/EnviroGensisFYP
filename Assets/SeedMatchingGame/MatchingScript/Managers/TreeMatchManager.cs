@@ -11,8 +11,19 @@ public class TreeMatchManager : ITreeMatcher
             matchedTreeID = tree.GetMatchID();
             if (matchedTreeID == seedID)
             {
+                if (GeneralAudioManager.Instance != null)
+                {
+                    GeneralAudioManager.Instance.PlaySound(SoundType.Match);
+                }
                 TreeTextFader.Instance.FadeInAndEnable(tree.GetTreeName());
                 return true;
+            }
+            else
+            {
+                if (GeneralAudioManager.Instance != null)
+                {
+                    GeneralAudioManager.Instance.PlaySound(SoundType.Fail);
+                }
             }
         }
 

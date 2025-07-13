@@ -14,7 +14,10 @@ public class UiManager : MonoBehaviour
     
     public void ActivateGameOverPanel()
     {
-        
+        if (GeneralAudioManager.Instance != null)
+        {
+            GeneralAudioManager.Instance.PlaySound(SoundType.Success);
+        }
         GameOverPanel.SetActive(true);
     }
 
@@ -25,6 +28,10 @@ public class UiManager : MonoBehaviour
 
     public void OnClickHome()
     {
+        if (GeneralAudioManager.Instance != null)
+        {
+            GeneralAudioManager.Instance.PlaySound(SoundType.Click);
+        }
         SceneManager.LoadScene((int)SceneIndex.SeedMenu);
     }
 }

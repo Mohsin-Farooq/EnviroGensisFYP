@@ -9,6 +9,10 @@ public class LevelManager : MonoBehaviour
 
     public void ActiveNewLevel()
     {
+        if (GeneralAudioManager.Instance != null)
+        {
+            GeneralAudioManager.Instance.PlaySound(SoundType.Click);
+        }
         if (currentLevel < levels.Count - 1)
         {
             currentLevel++;

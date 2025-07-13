@@ -61,6 +61,10 @@ public class AnswerData : MonoBehaviour {
         Checked = !Checked;
         UpdateUI();
 
+        if(GeneralAudioManager.Instance != null)
+        {
+            GeneralAudioManager.Instance.PlaySound(SoundType.Click);
+        }
         if (events.UpdateQuestionAnswer != null)
         {
             events.UpdateQuestionAnswer(this);
