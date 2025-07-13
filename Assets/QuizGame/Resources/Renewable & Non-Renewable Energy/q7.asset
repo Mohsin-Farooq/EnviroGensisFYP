@@ -10,27 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: q 1
+  m_Name: q7
   m_EditorClassIdentifier: 
-  _info: Why is it important to save water?
+  _info: Which of these is a non-renewable resource?
   _answers:
-  - _info: 'To make water more expensive
-
-'
+  - _info: Sunlight
     _isCorrect: 0
-  - _info: 'To keep rivers full of trash
-
-'
+  - _info: Wind
     _isCorrect: 0
-  - _info: 'Water is a limited resource
-
-'
+  - _info: Uranium (used in nuclear power)
     _isCorrect: 1
-  - _info: 'Water is too heavy
-
-'
+  - _info: Geothermal energy
     _isCorrect: 0
   _useTimer: 1
-  _timer: 15
+  _timer: 30
   _answerType: 1
-  _addScore: 15
+  _addScore: 10

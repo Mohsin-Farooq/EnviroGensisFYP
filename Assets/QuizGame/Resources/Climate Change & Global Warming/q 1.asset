@@ -16,22 +16,11 @@ MonoBehaviour:
   _answers:
   - _info: Solar energy
     _isCorrect: 0
-  - _info: 'Greenhouse gases like carbon dioxide
-
-      Greenhouse gases like carbon
-      dioxide
-
-'
+  - _info: Greenhouse gases like carbondioxide
     _isCorrect: 1
-  - _info: 'Wind energy
-
-      Wind energy
-
-'
+  - _info: Wind Energy
     _isCorrect: 0
-  - _info: 'Ozone layer depletion
-
-'
+  - _info: Ozone layer depletion
     _isCorrect: 0
   _useTimer: 1
   _timer: 10

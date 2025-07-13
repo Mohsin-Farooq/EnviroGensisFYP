@@ -10,27 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: q 8
+  m_Name: q4
   m_EditorClassIdentifier: 
-  _info: What can help in saving water while using the toilet?
+  _info: 'Fossil fuels are classified as:'
   _answers:
-  - _info: 'Flush multiple times
-
-'
+  - _info: Renewable
     _isCorrect: 0
-  - _info: 'Use a bucket to flush
-
-'
+  - _info: Sustainable
     _isCorrect: 0
-  - _info: 'Use a toilet with a low flow
-
-'
+  - _info: Non-renewable
     _isCorrect: 1
-  - _info: 'Let the toilet run
-
-'
+  - _info: Unlimited
     _isCorrect: 0
-  _useTimer: 1
-  _timer: 10
+  _useTimer: 0
+  _timer: 0
   _answerType: 1
-  _addScore: 10
+  _addScore: 5

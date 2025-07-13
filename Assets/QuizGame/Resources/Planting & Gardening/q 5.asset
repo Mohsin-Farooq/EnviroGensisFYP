@@ -14,10 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: Why are bees important for plants?
   _answers:
-  - _info: 'They destroy plants
-
-
-'
+  - _info: They destroy plants
     _isCorrect: 0
   - _info: 'They help plants pollinate
 

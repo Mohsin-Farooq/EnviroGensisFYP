@@ -10,27 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: q 5
+  m_Name: q8
   m_EditorClassIdentifier: 
-  _info: What is "greywater"?
+  _info: What makes wind power environmentally friendly?
   _answers:
-  - _info: 'Clean water from the tap
-
-'
+  - _info: It emits greenhouse gases
     _isCorrect: 0
-  - _info: ' Dirty water from the ocean
-
-'
+  - _info: It requires fossil fuels to operate
     _isCorrect: 0
-  - _info: 'Water that is frozen
-
-'
-    _isCorrect: 0
-  - _info: 'Water from washing dishes, laundry, or bathing
-
-'
+  - _info: It is clean and emits no carbon dioxide
     _isCorrect: 1
-  _useTimer: 1
-  _timer: 15
+  - _info: It causes smog
+    _isCorrect: 0
+  _useTimer: 0
+  _timer: 0
   _answerType: 1
-  _addScore: 15
+  _addScore: 5

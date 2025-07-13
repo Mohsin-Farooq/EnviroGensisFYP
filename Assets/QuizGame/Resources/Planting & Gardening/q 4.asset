@@ -22,11 +22,7 @@ MonoBehaviour:
 
 '
     _isCorrect: 0
-  - _info: 'Well-drained, loamy soil
-
-      Well-drained, loamy soil
-
-'
+  - _info: Well drained and loamy soil
     _isCorrect: 1
   - _info: 'Rocky soil
 
