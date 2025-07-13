@@ -97,6 +97,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IBegin
         if (CanResidueMove)
         {
             transform.position += Vector3.left * speed * Time.deltaTime;
+            
         }
      
         if (transform.position.x < leftEdge)

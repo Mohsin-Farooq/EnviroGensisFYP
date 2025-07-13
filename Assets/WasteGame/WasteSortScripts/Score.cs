@@ -10,7 +10,7 @@ public class Score : MonoBehaviour
     [SerializeField] private TextMeshProUGUI erro;
     [SerializeField] private TextMeshProUGUI life;
 
-    private int pointCount;
+    public int pointCount;
     private int erroCount;
     private int lifeCount;
 
@@ -43,6 +43,11 @@ public class Score : MonoBehaviour
     {
         pointCount++;
         point.text = $"{pointCount}";
+
+        if (pointCount >10)
+        {
+            Spawner.Instance.speed += 100;
+        }
     }
     
     public int GeTPointScore()
