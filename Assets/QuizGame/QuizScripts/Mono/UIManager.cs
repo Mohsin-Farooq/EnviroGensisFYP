@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using EnviroGenesis;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -179,6 +180,9 @@ public class UIManager : MonoBehaviour {
 
                 uIElements.HighScoreText.gameObject.SetActive(true);
                 uIElements.HighScoreText.text = "Score: " + events.CurrentFinalScore;
+                
+                PlayerCharacterAttribute.instance.AddAttribute(AttributeType.Happiness,events.CurrentFinalScore);
+                
                 //uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
                 break;
         }

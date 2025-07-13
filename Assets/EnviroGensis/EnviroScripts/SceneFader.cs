@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System;
+using EnviroGenesis;
 
 public class SceneFader : MonoBehaviour
 {
@@ -84,5 +85,9 @@ public class SceneFader : MonoBehaviour
         yield return new  WaitForSeconds(2f);
         yield return StartCoroutine(FadeIn());
     }
-    
+
+    private void OnApplicationQuit()
+    {
+        TheGame.Get().Save();
+    }
 }
