@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using EnviroGenesis;
 using UnityEngine;
 
@@ -6,16 +7,16 @@ public class ButtonManager : MonoBehaviour
 {  //game time 0.02s
 //    float game_speed = TheGame.Get().GetGameTimeSpeedPerSec();
     public AudioClip audioSource;
-
+    private float interval = 2f;
+    [SerializeField] private List <GameObject> Buttons;
     private void Start()
-    {
-      //  TheAudio.Get().PlayMusic("ButtonManager", audioSource, 1,true);
+    { 
+        StartCoroutine(DecreaseRoutine());
       TheGame.Get().Save();
     }
 
     public void WaterCleanGame()
-    {
-    
+    { 
         TheGame.Get().Save();
        SceneFader.Instance.FadeInLoadFadeOut("Menu");
     }
@@ -35,18 +36,40 @@ public class ButtonManager : MonoBehaviour
         TheGame.Get().Save();
         SceneFader.Instance.FadeInLoadFadeOut("SeedMatchingMenu");
     }
-//add this on any button for test prupose 
+
     public void AttributeDecrease()
     {
-        PlayerCharacterAttribute.instance.AddAttribute(AttributeType.Happiness,-20);
+        PlayerCharacterAttribute.instance.AddAttribute(AttributeType.Hunger,-20);
     }
     
-//cal this update or corotuine
+    
+    IEnumerator DecreaseRoutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(interval);
+            GetAttributeValue();
+        }
+    }
+    
+    
+
     public void GetAttributeValue()
     {
-        PlayerCharacterAttribute.instance.GetAttributeValue(AttributeType.Happiness);
-        
+        float happiness = PlayerCharacterAttribute.instance.GetAttributeValue(AttributeType.Happiness);
+        Buttons[1].SetActive(happiness < 30 ? true : false);
+
+        float thirst = PlayerCharacterAttribute.instance.GetAttributeValue(AttributeType.Thirst);
+        Buttons[3].SetActive(thirst < 30 ? true : false);
+
+        float hunger = PlayerCharacterAttribute.instance.GetAttributeValue(AttributeType.Hunger);
+        Buttons[2].SetActive(hunger < 30 ? true : false);
+
+        float health = PlayerCharacterAttribute.instance.GetAttributeValue(AttributeType.Health);
+        Buttons[0].SetActive(health < 20 ? true : false);
     }
+
+
     
     private IEnumerator NewRoutine()
     {
@@ -56,4 +79,5 @@ public class ButtonManager : MonoBehaviour
     }
     
 }
+
 
