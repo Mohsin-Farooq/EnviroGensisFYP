@@ -30,34 +30,26 @@ namespace EnviroGenesis
         public void OnClickLoad()
         {
             if (PlayerData.HasLastSave())
-                StartCoroutine(LoadRoutine());
+            {
+                SceneFader.Instance.FadeInOut(() =>
+                {
+                    TheGame.Load();
+                });
+            }
+
             else
-                StartCoroutine(NewRoutine());
+                OnClickNew();
         }
 
         public void OnClickNew()
         {
-            StartCoroutine(NewRoutine());
+            SceneFader.Instance.FadeInOut(() =>
+            {
+                TheGame.NewGame();
+            });
         }
 
-        private IEnumerator LoadRoutine()
-        {
-            BlackPanel.Get().Show();
-
-            yield return new WaitForSeconds(1f);
-
-            TheGame.Load();
-            
-        }
-
-        private IEnumerator NewRoutine()
-        {
-            BlackPanel.Get().Show();
-
-            yield return new WaitForSeconds(1f);
-
-            TheGame.NewGame();
-        }
+      
 
         public static GameOverPanel Get()
         {

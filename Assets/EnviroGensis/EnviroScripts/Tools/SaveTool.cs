@@ -41,6 +41,7 @@ namespace EnviroGenesis
                 {
                     BinaryFormatter bf = new BinaryFormatter();
                     string fullpath = Application.persistentDataPath + "/" + filename;
+                    Debug.Log(fullpath);
                     file = File.Create(fullpath);
                     bf.Serialize(file, data);
                     file.Close();

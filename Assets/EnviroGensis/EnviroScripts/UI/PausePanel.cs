@@ -65,23 +65,7 @@ namespace EnviroGenesis
                 TheGame.Load();
             });
         }
-        private IEnumerator LoadRoutine()
-        {
-            BlackPanel.Get().Show();
-
-            yield return new WaitForSeconds(1f);
-
-            TheGame.Load();
-        }
-
-        private IEnumerator NewRoutine()
-        {
-            BlackPanel.Get().Show();
-
-            yield return new WaitForSeconds(1f);
-
-            TheGame.NewGame();
-        }
+       
 
         public void OnClickMusicToggle()
         {
