@@ -66,7 +66,7 @@ public class ButtonManager : MonoBehaviour
         Buttons[2].SetActive(hunger < 30 ? true : false);
 
         float health = PlayerCharacterAttribute.instance.GetAttributeValue(AttributeType.Health);
-        Buttons[0].SetActive(health < 20 ? true : false);
+        Buttons[0].SetActive(health < 30 ? true : false);
     }
 
 
