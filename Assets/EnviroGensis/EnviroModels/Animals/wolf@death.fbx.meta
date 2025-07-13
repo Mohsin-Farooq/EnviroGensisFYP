@@ -1,88 +1,242 @@
 fileFormatVersion: 2
 guid: 880abbe487d228a4e882f5306637ddf9
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: ear.L.001
-    100002: ear.R.001
-    100004: foot.L
-    100006: foot.R
-    100008: front_foot.L
-    100010: front_foot.R
-    100012: front_shin.L
-    100014: front_shin.L.001
-    100016: front_shin.R
-    100018: front_shin.R.001
-    100020: front_thigh.L
-    100022: front_thigh.R
-    100024: front_toe.L
-    100026: front_toe.R
-    100028: metarig_wolf
-    100030: shin.L
-    100032: shin.L.001
-    100034: shin.R
-    100036: shin.R.001
-    100038: shoulder.L
-    100040: shoulder.R
-    100042: spine
-    100044: spine.001
-    100046: spine.003
-    100048: spine.004
-    100050: spine.005
-    100052: spine.006
-    100054: spine.008
-    100056: spine.009
-    100058: spine.011
-    100060: thigh.L
-    100062: thigh.R
-    100064: toe.L
-    100066: toe.R
-    100068: Wolf
-    100070: //RootNode
-    400000: ear.L.001
-    400002: ear.R.001
-    400004: foot.L
-    400006: foot.R
-    400008: front_foot.L
-    400010: front_foot.R
-    400012: front_shin.L
-    400014: front_shin.L.001
-    400016: front_shin.R
-    400018: front_shin.R.001
-    400020: front_thigh.L
-    400022: front_thigh.R
-    400024: front_toe.L
-    400026: front_toe.R
-    400028: metarig_wolf
-    400030: shin.L
-    400032: shin.L.001
-    400034: shin.R
-    400036: shin.R.001
-    400038: shoulder.L
-    400040: shoulder.R
-    400042: spine
-    400044: spine.001
-    400046: spine.003
-    400048: spine.004
-    400050: spine.005
-    400052: spine.006
-    400054: spine.008
-    400056: spine.009
-    400058: spine.011
-    400060: thigh.L
-    400062: thigh.R
-    400064: toe.L
-    400066: toe.R
-    400068: Wolf
-    400070: //RootNode
-    2100000: Material.002
-    4300000: Wolf
-    7400000: wolf_death
-    9500000: //RootNode
-    13700000: Wolf
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: ear.L.001
+  - first:
+      1: 100002
+    second: ear.R.001
+  - first:
+      1: 100004
+    second: foot.L
+  - first:
+      1: 100006
+    second: foot.R
+  - first:
+      1: 100008
+    second: front_foot.L
+  - first:
+      1: 100010
+    second: front_foot.R
+  - first:
+      1: 100012
+    second: front_shin.L
+  - first:
+      1: 100014
+    second: front_shin.L.001
+  - first:
+      1: 100016
+    second: front_shin.R
+  - first:
+      1: 100018
+    second: front_shin.R.001
+  - first:
+      1: 100020
+    second: front_thigh.L
+  - first:
+      1: 100022
+    second: front_thigh.R
+  - first:
+      1: 100024
+    second: front_toe.L
+  - first:
+      1: 100026
+    second: front_toe.R
+  - first:
+      1: 100028
+    second: metarig_wolf
+  - first:
+      1: 100030
+    second: shin.L
+  - first:
+      1: 100032
+    second: shin.L.001
+  - first:
+      1: 100034
+    second: shin.R
+  - first:
+      1: 100036
+    second: shin.R.001
+  - first:
+      1: 100038
+    second: shoulder.L
+  - first:
+      1: 100040
+    second: shoulder.R
+  - first:
+      1: 100042
+    second: spine
+  - first:
+      1: 100044
+    second: spine.001
+  - first:
+      1: 100046
+    second: spine.003
+  - first:
+      1: 100048
+    second: spine.004
+  - first:
+      1: 100050
+    second: spine.005
+  - first:
+      1: 100052
+    second: spine.006
+  - first:
+      1: 100054
+    second: spine.008
+  - first:
+      1: 100056
+    second: spine.009
+  - first:
+      1: 100058
+    second: spine.011
+  - first:
+      1: 100060
+    second: thigh.L
+  - first:
+      1: 100062
+    second: thigh.R
+  - first:
+      1: 100064
+    second: toe.L
+  - first:
+      1: 100066
+    second: toe.R
+  - first:
+      1: 100068
+    second: Wolf
+  - first:
+      1: 100070
+    second: //RootNode
+  - first:
+      4: 400000
+    second: ear.L.001
+  - first:
+      4: 400002
+    second: ear.R.001
+  - first:
+      4: 400004
+    second: foot.L
+  - first:
+      4: 400006
+    second: foot.R
+  - first:
+      4: 400008
+    second: front_foot.L
+  - first:
+      4: 400010
+    second: front_foot.R
+  - first:
+      4: 400012
+    second: front_shin.L
+  - first:
+      4: 400014
+    second: front_shin.L.001
+  - first:
+      4: 400016
+    second: front_shin.R
+  - first:
+      4: 400018
+    second: front_shin.R.001
+  - first:
+      4: 400020
+    second: front_thigh.L
+  - first:
+      4: 400022
+    second: front_thigh.R
+  - first:
+      4: 400024
+    second: front_toe.L
+  - first:
+      4: 400026
+    second: front_toe.R
+  - first:
+      4: 400028
+    second: metarig_wolf
+  - first:
+      4: 400030
+    second: shin.L
+  - first:
+      4: 400032
+    second: shin.L.001
+  - first:
+      4: 400034
+    second: shin.R
+  - first:
+      4: 400036
+    second: shin.R.001
+  - first:
+      4: 400038
+    second: shoulder.L
+  - first:
+      4: 400040
+    second: shoulder.R
+  - first:
+      4: 400042
+    second: spine
+  - first:
+      4: 400044
+    second: spine.001
+  - first:
+      4: 400046
+    second: spine.003
+  - first:
+      4: 400048
+    second: spine.004
+  - first:
+      4: 400050
+    second: spine.005
+  - first:
+      4: 400052
+    second: spine.006
+  - first:
+      4: 400054
+    second: spine.008
+  - first:
+      4: 400056
+    second: spine.009
+  - first:
+      4: 400058
+    second: spine.011
+  - first:
+      4: 400060
+    second: thigh.L
+  - first:
+      4: 400062
+    second: thigh.R
+  - first:
+      4: 400064
+    second: toe.L
+  - first:
+      4: 400066
+    second: toe.R
+  - first:
+      4: 400068
+    second: Wolf
+  - first:
+      4: 400070
+    second: //RootNode
+  - first:
+      21: 2100000
+    second: Material.002
+  - first:
+      43: 4300000
+    second: Wolf
+  - first:
+      74: 7400000
+    second: wolf_death
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Wolf
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -91,9 +245,8 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -111,6 +264,7 @@ ModelImporter:
     - serializedVersion: 16
       name: wolf_death
       takeName: Scene
+      internalID: 0
       firstFrame: 304
       lastFrame: 330
       wrapMode: 0
@@ -140,28 +294,39 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -170,10 +335,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -183,13 +348,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

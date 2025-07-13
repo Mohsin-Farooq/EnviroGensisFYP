@@ -1,86 +1,236 @@
 fileFormatVersion: 2
 guid: af66e88f5166bc44bb41f79111a9db71
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Armature
-    100002: //RootNode
-    100004: Chest
-    100006: Ear.L
-    100008: Ear.R
-    100010: Foot.L
-    100012: Foot.R
-    100014: ForeArm.L
-    100016: ForeArm.R
-    100018: Hand.L
-    100020: Hand.R
-    100022: HandIK.L
-    100024: HandIK.R
-    100026: Head
-    100028: HeadIK
-    100030: HellIK.L
-    100032: HellIK.R
-    100034: Hips
-    100036: Neck
-    100038: Pelvis
-    100040: Pig
-    100042: Root
-    100044: Shin.L
-    100046: Shin.R
-    100048: Shoulder.L
-    100050: Shoulder.R
-    100052: Spine
-    100054: Thigh.L
-    100056: Thigh.R
-    100058: Toe.L
-    100060: Toe.R
-    100062: UpperArm.L
-    100064: UpperArm.R
-    400000: Armature
-    400002: //RootNode
-    400004: Chest
-    400006: Ear.L
-    400008: Ear.R
-    400010: Foot.L
-    400012: Foot.R
-    400014: ForeArm.L
-    400016: ForeArm.R
-    400018: Hand.L
-    400020: Hand.R
-    400022: HandIK.L
-    400024: HandIK.R
-    400026: Head
-    400028: HeadIK
-    400030: HellIK.L
-    400032: HellIK.R
-    400034: Hips
-    400036: Neck
-    400038: Pelvis
-    400040: Pig
-    400042: Root
-    400044: Shin.L
-    400046: Shin.R
-    400048: Shoulder.L
-    400050: Shoulder.R
-    400052: Spine
-    400054: Thigh.L
-    400056: Thigh.R
-    400058: Toe.L
-    400060: Toe.R
-    400062: UpperArm.L
-    400064: UpperArm.R
-    2100000: Material.078
-    2100002: Material.079
-    2100004: Material.001
-    2100006: Material.002
-    4300000: Pig
-    7400000: boar_idle2
-    9500000: //RootNode
-    13700000: Pig
-    2186277476908879412: ImportLogs
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Armature
+  - first:
+      1: 100002
+    second: //RootNode
+  - first:
+      1: 100004
+    second: Chest
+  - first:
+      1: 100006
+    second: Ear.L
+  - first:
+      1: 100008
+    second: Ear.R
+  - first:
+      1: 100010
+    second: Foot.L
+  - first:
+      1: 100012
+    second: Foot.R
+  - first:
+      1: 100014
+    second: ForeArm.L
+  - first:
+      1: 100016
+    second: ForeArm.R
+  - first:
+      1: 100018
+    second: Hand.L
+  - first:
+      1: 100020
+    second: Hand.R
+  - first:
+      1: 100022
+    second: HandIK.L
+  - first:
+      1: 100024
+    second: HandIK.R
+  - first:
+      1: 100026
+    second: Head
+  - first:
+      1: 100028
+    second: HeadIK
+  - first:
+      1: 100030
+    second: HellIK.L
+  - first:
+      1: 100032
+    second: HellIK.R
+  - first:
+      1: 100034
+    second: Hips
+  - first:
+      1: 100036
+    second: Neck
+  - first:
+      1: 100038
+    second: Pelvis
+  - first:
+      1: 100040
+    second: Pig
+  - first:
+      1: 100042
+    second: Root
+  - first:
+      1: 100044
+    second: Shin.L
+  - first:
+      1: 100046
+    second: Shin.R
+  - first:
+      1: 100048
+    second: Shoulder.L
+  - first:
+      1: 100050
+    second: Shoulder.R
+  - first:
+      1: 100052
+    second: Spine
+  - first:
+      1: 100054
+    second: Thigh.L
+  - first:
+      1: 100056
+    second: Thigh.R
+  - first:
+      1: 100058
+    second: Toe.L
+  - first:
+      1: 100060
+    second: Toe.R
+  - first:
+      1: 100062
+    second: UpperArm.L
+  - first:
+      1: 100064
+    second: UpperArm.R
+  - first:
+      4: 400000
+    second: Armature
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      4: 400004
+    second: Chest
+  - first:
+      4: 400006
+    second: Ear.L
+  - first:
+      4: 400008
+    second: Ear.R
+  - first:
+      4: 400010
+    second: Foot.L
+  - first:
+      4: 400012
+    second: Foot.R
+  - first:
+      4: 400014
+    second: ForeArm.L
+  - first:
+      4: 400016
+    second: ForeArm.R
+  - first:
+      4: 400018
+    second: Hand.L
+  - first:
+      4: 400020
+    second: Hand.R
+  - first:
+      4: 400022
+    second: HandIK.L
+  - first:
+      4: 400024
+    second: HandIK.R
+  - first:
+      4: 400026
+    second: Head
+  - first:
+      4: 400028
+    second: HeadIK
+  - first:
+      4: 400030
+    second: HellIK.L
+  - first:
+      4: 400032
+    second: HellIK.R
+  - first:
+      4: 400034
+    second: Hips
+  - first:
+      4: 400036
+    second: Neck
+  - first:
+      4: 400038
+    second: Pelvis
+  - first:
+      4: 400040
+    second: Pig
+  - first:
+      4: 400042
+    second: Root
+  - first:
+      4: 400044
+    second: Shin.L
+  - first:
+      4: 400046
+    second: Shin.R
+  - first:
+      4: 400048
+    second: Shoulder.L
+  - first:
+      4: 400050
+    second: Shoulder.R
+  - first:
+      4: 400052
+    second: Spine
+  - first:
+      4: 400054
+    second: Thigh.L
+  - first:
+      4: 400056
+    second: Thigh.R
+  - first:
+      4: 400058
+    second: Toe.L
+  - first:
+      4: 400060
+    second: Toe.R
+  - first:
+      4: 400062
+    second: UpperArm.L
+  - first:
+      4: 400064
+    second: UpperArm.R
+  - first:
+      21: 2100000
+    second: Material.078
+  - first:
+      21: 2100002
+    second: Material.079
+  - first:
+      21: 2100004
+    second: Material.001
+  - first:
+      21: 2100006
+    second: Material.002
+  - first:
+      43: 4300000
+    second: Pig
+  - first:
+      74: 7400000
+    second: boar_idle2
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Pig
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -89,9 +239,8 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -109,6 +258,7 @@ ModelImporter:
     - serializedVersion: 16
       name: boar_idle2
       takeName: Armature|01Idle01
+      internalID: 0
       firstFrame: 0
       lastFrame: 59
       wrapMode: 0
@@ -138,28 +288,39 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -168,10 +329,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -181,13 +342,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

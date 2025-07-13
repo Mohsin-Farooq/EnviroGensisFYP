@@ -1,90 +1,248 @@
 fileFormatVersion: 2
 guid: 82e52c8fa04e0ee46bba02bdd702f3ad
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Armature
-    100002: Chest
-    100004: Ear.L
-    100006: Ear.R
-    100008: EarTip.L
-    100010: EarTip.R
-    100012: ElbowIK.L
-    100014: ElbowIK.R
-    100016: Feet.L
-    100018: Feet.R
-    100020: Forearm.L
-    100022: Forearm.R
-    100024: Hand.L
-    100026: Hand.R
-    100028: HandIK.L
-    100030: HandIK.R
-    100032: Head
-    100034: HeelIK.L
-    100036: HeelIK.R
-    100038: KneeIK.L
-    100040: KneeIK.R
-    100042: Neck
-    100044: Pelvis
-    100046: Rabbit
-    100048: //RootNode
-    100050: Root
-    100052: Shin.L
-    100054: Shin.R
-    100056: Shoulder.L
-    100058: Shoulder.R
-    100060: Spine
-    100062: Toe.L
-    100064: Toe.R
-    100066: UpperArm.L
-    100068: UpperArm.R
-    100070: UpperLeg.L
-    100072: UpperLeg.R
-    400000: Armature
-    400002: Chest
-    400004: Ear.L
-    400006: Ear.R
-    400008: EarTip.L
-    400010: EarTip.R
-    400012: ElbowIK.L
-    400014: ElbowIK.R
-    400016: Feet.L
-    400018: Feet.R
-    400020: Forearm.L
-    400022: Forearm.R
-    400024: Hand.L
-    400026: Hand.R
-    400028: HandIK.L
-    400030: HandIK.R
-    400032: Head
-    400034: HeelIK.L
-    400036: HeelIK.R
-    400038: KneeIK.L
-    400040: KneeIK.R
-    400042: Neck
-    400044: Pelvis
-    400046: Rabbit
-    400048: //RootNode
-    400050: Root
-    400052: Shin.L
-    400054: Shin.R
-    400056: Shoulder.L
-    400058: Shoulder.R
-    400060: Spine
-    400062: Toe.L
-    400064: Toe.R
-    400066: UpperArm.L
-    400068: UpperArm.R
-    400070: UpperLeg.L
-    400072: UpperLeg.R
-    2100000: Material.004
-    4300000: Rabbit
-    7400000: rabbit_idle
-    9500000: //RootNode
-    13700000: Rabbit
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Armature
+  - first:
+      1: 100002
+    second: Chest
+  - first:
+      1: 100004
+    second: Ear.L
+  - first:
+      1: 100006
+    second: Ear.R
+  - first:
+      1: 100008
+    second: EarTip.L
+  - first:
+      1: 100010
+    second: EarTip.R
+  - first:
+      1: 100012
+    second: ElbowIK.L
+  - first:
+      1: 100014
+    second: ElbowIK.R
+  - first:
+      1: 100016
+    second: Feet.L
+  - first:
+      1: 100018
+    second: Feet.R
+  - first:
+      1: 100020
+    second: Forearm.L
+  - first:
+      1: 100022
+    second: Forearm.R
+  - first:
+      1: 100024
+    second: Hand.L
+  - first:
+      1: 100026
+    second: Hand.R
+  - first:
+      1: 100028
+    second: HandIK.L
+  - first:
+      1: 100030
+    second: HandIK.R
+  - first:
+      1: 100032
+    second: Head
+  - first:
+      1: 100034
+    second: HeelIK.L
+  - first:
+      1: 100036
+    second: HeelIK.R
+  - first:
+      1: 100038
+    second: KneeIK.L
+  - first:
+      1: 100040
+    second: KneeIK.R
+  - first:
+      1: 100042
+    second: Neck
+  - first:
+      1: 100044
+    second: Pelvis
+  - first:
+      1: 100046
+    second: Rabbit
+  - first:
+      1: 100048
+    second: //RootNode
+  - first:
+      1: 100050
+    second: Root
+  - first:
+      1: 100052
+    second: Shin.L
+  - first:
+      1: 100054
+    second: Shin.R
+  - first:
+      1: 100056
+    second: Shoulder.L
+  - first:
+      1: 100058
+    second: Shoulder.R
+  - first:
+      1: 100060
+    second: Spine
+  - first:
+      1: 100062
+    second: Toe.L
+  - first:
+      1: 100064
+    second: Toe.R
+  - first:
+      1: 100066
+    second: UpperArm.L
+  - first:
+      1: 100068
+    second: UpperArm.R
+  - first:
+      1: 100070
+    second: UpperLeg.L
+  - first:
+      1: 100072
+    second: UpperLeg.R
+  - first:
+      4: 400000
+    second: Armature
+  - first:
+      4: 400002
+    second: Chest
+  - first:
+      4: 400004
+    second: Ear.L
+  - first:
+      4: 400006
+    second: Ear.R
+  - first:
+      4: 400008
+    second: EarTip.L
+  - first:
+      4: 400010
+    second: EarTip.R
+  - first:
+      4: 400012
+    second: ElbowIK.L
+  - first:
+      4: 400014
+    second: ElbowIK.R
+  - first:
+      4: 400016
+    second: Feet.L
+  - first:
+      4: 400018
+    second: Feet.R
+  - first:
+      4: 400020
+    second: Forearm.L
+  - first:
+      4: 400022
+    second: Forearm.R
+  - first:
+      4: 400024
+    second: Hand.L
+  - first:
+      4: 400026
+    second: Hand.R
+  - first:
+      4: 400028
+    second: HandIK.L
+  - first:
+      4: 400030
+    second: HandIK.R
+  - first:
+      4: 400032
+    second: Head
+  - first:
+      4: 400034
+    second: HeelIK.L
+  - first:
+      4: 400036
+    second: HeelIK.R
+  - first:
+      4: 400038
+    second: KneeIK.L
+  - first:
+      4: 400040
+    second: KneeIK.R
+  - first:
+      4: 400042
+    second: Neck
+  - first:
+      4: 400044
+    second: Pelvis
+  - first:
+      4: 400046
+    second: Rabbit
+  - first:
+      4: 400048
+    second: //RootNode
+  - first:
+      4: 400050
+    second: Root
+  - first:
+      4: 400052
+    second: Shin.L
+  - first:
+      4: 400054
+    second: Shin.R
+  - first:
+      4: 400056
+    second: Shoulder.L
+  - first:
+      4: 400058
+    second: Shoulder.R
+  - first:
+      4: 400060
+    second: Spine
+  - first:
+      4: 400062
+    second: Toe.L
+  - first:
+      4: 400064
+    second: Toe.R
+  - first:
+      4: 400066
+    second: UpperArm.L
+  - first:
+      4: 400068
+    second: UpperArm.R
+  - first:
+      4: 400070
+    second: UpperLeg.L
+  - first:
+      4: 400072
+    second: UpperLeg.R
+  - first:
+      21: 2100000
+    second: Material.004
+  - first:
+      43: 4300000
+    second: Rabbit
+  - first:
+      74: 7400000
+    second: rabbit_idle
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Rabbit
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -93,9 +251,8 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -113,6 +270,7 @@ ModelImporter:
     - serializedVersion: 16
       name: rabbit_idle
       takeName: Scene
+      internalID: 0
       firstFrame: 1
       lastFrame: 61
       wrapMode: 0
@@ -142,28 +300,39 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -172,10 +341,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -185,13 +354,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

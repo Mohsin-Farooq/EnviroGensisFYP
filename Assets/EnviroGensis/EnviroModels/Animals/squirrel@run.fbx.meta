@@ -1,76 +1,206 @@
 fileFormatVersion: 2
 guid: 4f38408f7436cf64599089619f717703
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: ear.L.001
-    100002: ear.R.001
-    100004: foot.L
-    100006: foot.L.001
-    100008: foot.R
-    100010: foot.R.001
-    100012: front_shin.L
-    100014: front_shin.R
-    100016: front_thigh.L
-    100018: front_thigh.L.001
-    100020: front_thigh.R
-    100022: front_thigh.R.001
-    100024: metarig_squirrel
-    100026: shoulder.L
-    100028: shoulder.R
-    100030: spine
-    100032: spine.001
-    100034: spine.003
-    100036: spine.004
-    100038: spine.005
-    100040: spine.006
-    100042: spine.008
-    100044: spine.009
-    100046: spine.011
-    100048: Squirrel
-    100050: //RootNode
-    100052: thigh.L
-    100054: thigh.R
-    100056: toe.L
-    100058: toe.R
-    400000: ear.L.001
-    400002: ear.R.001
-    400004: foot.L
-    400006: foot.L.001
-    400008: foot.R
-    400010: foot.R.001
-    400012: front_shin.L
-    400014: front_shin.R
-    400016: front_thigh.L
-    400018: front_thigh.L.001
-    400020: front_thigh.R
-    400022: front_thigh.R.001
-    400024: metarig_squirrel
-    400026: shoulder.L
-    400028: shoulder.R
-    400030: spine
-    400032: spine.001
-    400034: spine.003
-    400036: spine.004
-    400038: spine.005
-    400040: spine.006
-    400042: spine.008
-    400044: spine.009
-    400046: spine.011
-    400048: Squirrel
-    400050: //RootNode
-    400052: thigh.L
-    400054: thigh.R
-    400056: toe.L
-    400058: toe.R
-    2100000: Material
-    4300000: Squirrel
-    7400000: squirrel_run
-    9500000: //RootNode
-    13700000: Squirrel
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: ear.L.001
+  - first:
+      1: 100002
+    second: ear.R.001
+  - first:
+      1: 100004
+    second: foot.L
+  - first:
+      1: 100006
+    second: foot.L.001
+  - first:
+      1: 100008
+    second: foot.R
+  - first:
+      1: 100010
+    second: foot.R.001
+  - first:
+      1: 100012
+    second: front_shin.L
+  - first:
+      1: 100014
+    second: front_shin.R
+  - first:
+      1: 100016
+    second: front_thigh.L
+  - first:
+      1: 100018
+    second: front_thigh.L.001
+  - first:
+      1: 100020
+    second: front_thigh.R
+  - first:
+      1: 100022
+    second: front_thigh.R.001
+  - first:
+      1: 100024
+    second: metarig_squirrel
+  - first:
+      1: 100026
+    second: shoulder.L
+  - first:
+      1: 100028
+    second: shoulder.R
+  - first:
+      1: 100030
+    second: spine
+  - first:
+      1: 100032
+    second: spine.001
+  - first:
+      1: 100034
+    second: spine.003
+  - first:
+      1: 100036
+    second: spine.004
+  - first:
+      1: 100038
+    second: spine.005
+  - first:
+      1: 100040
+    second: spine.006
+  - first:
+      1: 100042
+    second: spine.008
+  - first:
+      1: 100044
+    second: spine.009
+  - first:
+      1: 100046
+    second: spine.011
+  - first:
+      1: 100048
+    second: Squirrel
+  - first:
+      1: 100050
+    second: //RootNode
+  - first:
+      1: 100052
+    second: thigh.L
+  - first:
+      1: 100054
+    second: thigh.R
+  - first:
+      1: 100056
+    second: toe.L
+  - first:
+      1: 100058
+    second: toe.R
+  - first:
+      4: 400000
+    second: ear.L.001
+  - first:
+      4: 400002
+    second: ear.R.001
+  - first:
+      4: 400004
+    second: foot.L
+  - first:
+      4: 400006
+    second: foot.L.001
+  - first:
+      4: 400008
+    second: foot.R
+  - first:
+      4: 400010
+    second: foot.R.001
+  - first:
+      4: 400012
+    second: front_shin.L
+  - first:
+      4: 400014
+    second: front_shin.R
+  - first:
+      4: 400016
+    second: front_thigh.L
+  - first:
+      4: 400018
+    second: front_thigh.L.001
+  - first:
+      4: 400020
+    second: front_thigh.R
+  - first:
+      4: 400022
+    second: front_thigh.R.001
+  - first:
+      4: 400024
+    second: metarig_squirrel
+  - first:
+      4: 400026
+    second: shoulder.L
+  - first:
+      4: 400028
+    second: shoulder.R
+  - first:
+      4: 400030
+    second: spine
+  - first:
+      4: 400032
+    second: spine.001
+  - first:
+      4: 400034
+    second: spine.003
+  - first:
+      4: 400036
+    second: spine.004
+  - first:
+      4: 400038
+    second: spine.005
+  - first:
+      4: 400040
+    second: spine.006
+  - first:
+      4: 400042
+    second: spine.008
+  - first:
+      4: 400044
+    second: spine.009
+  - first:
+      4: 400046
+    second: spine.011
+  - first:
+      4: 400048
+    second: Squirrel
+  - first:
+      4: 400050
+    second: //RootNode
+  - first:
+      4: 400052
+    second: thigh.L
+  - first:
+      4: 400054
+    second: thigh.R
+  - first:
+      4: 400056
+    second: toe.L
+  - first:
+      4: 400058
+    second: toe.R
+  - first:
+      21: 2100000
+    second: Material
+  - first:
+      43: 4300000
+    second: Squirrel
+  - first:
+      74: 7400000
+    second: squirrel_run
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Squirrel
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -79,9 +209,8 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -99,6 +228,7 @@ ModelImporter:
     - serializedVersion: 16
       name: squirrel_run
       takeName: Scene
+      internalID: 0
       firstFrame: 165
       lastFrame: 195
       wrapMode: 0
@@ -128,28 +258,39 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -158,10 +299,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -171,13 +312,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

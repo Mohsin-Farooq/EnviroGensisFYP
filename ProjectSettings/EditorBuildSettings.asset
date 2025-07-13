@@ -37,7 +37,7 @@ EditorBuildSettings:
     guid: 3b53ad3f199c32b4c9cd01eba6399d1b
   - enabled: 1
     path: Assets/RiverGame/RiverScenes/level6Fantasy.unity
-    guid: 39b08536774c2104ebe283df3a2818f4
+    guid: 0d030d1a9360a824eb8bd56b3a6da9e0
   - enabled: 1
     path: Assets/EnviroGensis/EnviroScenes/EnviroGamePlay.unity
     guid: 1afbc08c5fa414f4e8ba2642396d0835
