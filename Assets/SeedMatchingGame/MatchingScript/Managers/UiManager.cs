@@ -36,6 +36,6 @@ public class UiManager : MonoBehaviour
         {
             GeneralAudioManager.Instance.PlaySound(SoundType.Click);
         }
-        SceneManager.LoadScene((int)SceneIndex.SeedMenu);
+           SceneManager.LoadScene((int)SceneIndex.SeedMenu);
     }
 }

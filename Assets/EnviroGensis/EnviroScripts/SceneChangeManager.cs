@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,7 +19,7 @@ public class SceneChangeManager : MonoBehaviour
         {
             GeneralAudioManager.Instance.PlaySound(SoundType.Click);
         }
-
+           Time.timeScale = 1;
         SceneManager.LoadScene((int)SceneIndex.WasteSortMenu);
     }
 
@@ -122,7 +120,7 @@ public class SceneChangeManager : MonoBehaviour
             GeneralAudioManager.Instance.PlaySound(SoundType.Click);
         }
 
-    //    SceneManager.LoadScene((int)SceneIndex.EnviroGamePlay);
+      // SceneManager.LoadScene((int)SceneIndex.EnviroGamePlay);
         SceneFader.Instance.FadeInLoadFadeOut("EnviroGamePlay");
         
     }

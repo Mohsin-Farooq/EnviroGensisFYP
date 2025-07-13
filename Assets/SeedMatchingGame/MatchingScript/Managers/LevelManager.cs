@@ -6,7 +6,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private List<GameObject> levels;
     private int currentLevel = 0;
     private GameObject levelToActivat;
-
+//ddddd
     public void ActiveNewLevel()
     {
         if (GeneralAudioManager.Instance != null)
