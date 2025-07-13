@@ -13,13 +13,28 @@ public class ButtonManager : MonoBehaviour
       TheGame.Get().Save();
     }
 
-    public void AttributeIncrease()
+    public void WaterCleanGame()
     {
-    //   PlayerCharacterAttribute.instance.AddAttribute(AttributeType.Happiness,20);
+    
         TheGame.Get().Save();
        SceneFader.Instance.FadeInLoadFadeOut("Menu");
     }
-
+    
+    public void WasteSortGame()
+    {
+        TheGame.Get().Save();
+        SceneFader.Instance.FadeInLoadFadeOut("WasteSortMenu");
+    }
+    public void QuizGame()
+    {
+        TheGame.Get().Save();
+        SceneFader.Instance.FadeInLoadFadeOut("QuizGame");
+    }
+    public void SeedMatchingGame()
+    {
+        TheGame.Get().Save();
+        SceneFader.Instance.FadeInLoadFadeOut("SeedMatchingMenu");
+    }
 //add this on any button for test prupose 
     public void AttributeDecrease()
     {
