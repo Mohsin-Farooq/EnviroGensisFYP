@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf9c6379ef86f62409a7f37c3a7c8967, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  game_time_mult: 144
+  game_time_mult: 250
   start_day_time: 6
-  end_day_time: 20
-  day_light_dir_intensity: 1
+  end_day_time: 18
+  day_light_dir_intensity: 1.5
   day_light_ambient_intensity: 1
   night_light_dir_intensity: 0.3
   night_light_ambient_intensity: 0.5

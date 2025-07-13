@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: RainHeavy
   m_EditorClassIdentifier: 
   id: rain_heavy
-  probability: 1
+  probability: 100
   effect: 10
-  weather_fx: {fileID: 1749304953836652662, guid: 6e42c564ae20a1141a5763086007e06c,
-    type: 3}
+  weather_fx: {fileID: 1749304953836652662, guid: 6e42c564ae20a1141a5763086007e06c, type: 3}
   light_mult: 0.7
