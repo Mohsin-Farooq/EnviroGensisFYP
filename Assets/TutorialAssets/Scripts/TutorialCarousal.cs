@@ -40,6 +40,7 @@ public class TutorialCarousel : MonoBehaviour
 
     void UpdateUI()
     {
+
         tutorialImage.sprite = tutorialSprites[currentIndex];
 
         leftButton.interactable = currentIndex > 0;
@@ -55,15 +56,23 @@ public class TutorialCarousel : MonoBehaviour
     {
         if (currentIndex > 0)
         {
+            if (GeneralAudioManager.Instance != null)
+            {
+                GeneralAudioManager.Instance.PlaySound(SoundType.Click);
+            }
             currentIndex--;
             UpdateUI();
         }
     }
 
     public void GoRight()
-    {
+    {        
         if (currentIndex < tutorialSprites.Length - 1)
         {
+            if (GeneralAudioManager.Instance != null)
+            {
+                GeneralAudioManager.Instance.PlaySound(SoundType.Click);
+            }
             currentIndex++;
             UpdateUI();
         }
