@@ -122,6 +122,8 @@ public class SceneChangeManager : MonoBehaviour
             GeneralAudioManager.Instance.PlaySound(SoundType.Click);
         }
 
-        SceneManager.LoadScene((int)SceneIndex.EnviroGamePlay);
+    //    SceneManager.LoadScene((int)SceneIndex.EnviroGamePlay);
+        SceneFader.Instance.FadeInLoadFadeOut("EnviroGamePlay");
+        
     }
 }

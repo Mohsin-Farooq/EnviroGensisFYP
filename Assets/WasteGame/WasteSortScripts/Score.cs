@@ -37,17 +37,19 @@ public class Score : MonoBehaviour
     {
         Instance = this;
     }
-    public string GeTPointScore()
-    {
-        return point.text;
-    }
+    
 
     public void SetTPointScore()
     {
         pointCount++;
         point.text = $"{pointCount}";
     }
-
+    
+    public int GeTPointScore()
+    {
+        return pointCount;
+    }
+    
     public string GeTErroScore()
     {
         return erro.text;

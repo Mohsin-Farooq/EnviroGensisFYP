@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ButtonManager : MonoBehaviour
 {  //game time 0.02s
-    float game_speed = TheGame.Get().GetGameTimeSpeedPerSec();
+//    float game_speed = TheGame.Get().GetGameTimeSpeedPerSec();
     public AudioClip audioSource;
 
     private void Start()

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using EnviroGenesis;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,11 +8,12 @@ public class WasteGameManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private GameObject settingPanel;
+    [SerializeField] private int lifeCount;
     public static WasteGameManager Instance;
 
-    private int pointCount;
-    private int erroCount;
-    private int lifeCount;
+     private int pointCount;
+      private int erroCount;
+    
    
     private void Awake()
     {
@@ -31,7 +33,6 @@ public class WasteGameManager : MonoBehaviour
     private void RestartScoreValue()
     {
         erroCount = 0;
-        lifeCount = 7;
         pointCount = 0;
     }
 
@@ -66,6 +67,9 @@ public class WasteGameManager : MonoBehaviour
             GeneralAudioManager.Instance.PlaySound(SoundType.Fail);
         }
         gameOverUI.SetActive(true);
+
+        int score = Score.Instance.GeTPointScore();
+        PlayerCharacterAttribute.instance.AddAttribute(AttributeType.Health,score);
     }
 
     public void ReloadLevel()
