@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections.Generic;
-
 public class PerformanceManager : MonoBehaviour
 {
     private List<IDeviceProfile> profiles;
