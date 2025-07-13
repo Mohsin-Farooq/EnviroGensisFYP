@@ -12,7 +12,7 @@ public class TutorialCarousel : MonoBehaviour
     public GameObject dotPrefab;
 
     private int currentIndex = 0;
-    private List<GameObject> dots = new List<GameObject>();
+    private List<DotUI> dotUIs = new List<DotUI>();
 
     void Start()
     {
@@ -28,12 +28,13 @@ public class TutorialCarousel : MonoBehaviour
         foreach (Transform child in dotContainer)
             Destroy(child.gameObject);
 
-        dots.Clear();
+        dotUIs.Clear();
 
         for (int i = 0; i < tutorialSprites.Length; i++)
         {
-            GameObject dot = Instantiate(dotPrefab, dotContainer);
-            dots.Add(dot);
+            GameObject dotGO = Instantiate(dotPrefab, dotContainer);
+            DotUI dotUI = dotGO.GetComponent<DotUI>();
+            dotUIs.Add(dotUI);
         }
     }
 
@@ -41,14 +42,12 @@ public class TutorialCarousel : MonoBehaviour
     {
         tutorialImage.sprite = tutorialSprites[currentIndex];
 
-        // Update button interactability
         leftButton.interactable = currentIndex > 0;
         rightButton.interactable = currentIndex < tutorialSprites.Length - 1;
 
-        // Update dots
-        for (int i = 0; i < dots.Count; i++)
+        for (int i = 0; i < dotUIs.Count; i++)
         {
-            dots[i].GetComponent<Image>().color = (i == currentIndex) ? Color.white : Color.gray;
+            dotUIs[i].SetSelected(i == currentIndex);
         }
     }
 
