@@ -10,27 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: q 7
+  m_Name: q2
   m_EditorClassIdentifier: 
-  _info: How can we conserve water in the garden?
+  _info: What is a major disadvantage of non-renewable energy sources?
   _answers:
-  - _info: 'Water plants in the afternoon when it''s hot
-
-'
+  - _info: They are unlimited
     _isCorrect: 0
-  - _info: 'Use sprinklers during a rainstorm
-
-'
+  - _info: They are clean
     _isCorrect: 0
-  - _info: 'Water plants early in the morning or late evening
-
-'
+  - _info: They cause environmental pollution
     _isCorrect: 1
-  - _info: 'Let the plants dry out
-
-'
+  - _info: They can be replenished quickly
     _isCorrect: 0
-  _useTimer: 1
-  _timer: 10
+  _useTimer: 0
+  _timer: 0
   _answerType: 1
-  _addScore: 10
+  _addScore: 15

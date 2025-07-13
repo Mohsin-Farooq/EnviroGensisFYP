@@ -14,12 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: What is mulching used for in gardening?
   _answers:
-  - _info: 'To keep plants'' roots cool and retain moisture
-
-      To keep plants''
-      roots cool and retain moisture
-
-'
+  - _info: To keep plants' roots cool and retain moisture
     _isCorrect: 1
   - _info: 'To grow new plants faster
 

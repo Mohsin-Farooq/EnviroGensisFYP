@@ -14,21 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: Which of these activities contributes to global warming?
   _answers:
-  - _info: 'Recycling paper
-
-'
+  - _info: Recycling paper
     _isCorrect: 0
-  - _info: 'Planting trees
-
-'
+  - _info: Planting trees
     _isCorrect: 0
-  - _info: 'Driving cars that burn fossil fuels
-
-'
+  - _info: Driving cars that burn fossil fuels
     _isCorrect: 1
-  - _info: 'Using energy-efficient appliances
-
-'
+  - _info: Using energy-efficient appliances
     _isCorrect: 0
   _useTimer: 0
   _timer: 10
