@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterAttributeData
   type: 6
   title: Hunger
-  start_value: 60
+  start_value: 20
   max_value: 100
   value_per_hour: -2
   deplete_hp_loss: -20

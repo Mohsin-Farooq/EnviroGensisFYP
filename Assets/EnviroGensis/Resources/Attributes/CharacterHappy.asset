@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterAttributeData
   type: 4
   title: Happiness
-  start_value: 50
+  start_value: 20
   max_value: 100
   value_per_hour: -1
   deplete_hp_loss: -2
   deplete_move_mult: 0.5
+  deplete_attack_mult: 1
