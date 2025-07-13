@@ -407,10 +407,27 @@ namespace EnviroGenesis
         //Get world position of the mouse
         public Vector3 GetMouseWorldPosition()
         {
-            Vector3 mousePos = GetMousePosition();
-            Vector3 mouse = new Vector3(mousePos.x, mousePos.y, 10f);
-            return TheCamera.GetCamera().ScreenToWorldPoint(mouse);
+            Vector3 inputPos;
+
+            if (Input.touchCount > 0)
+            {
+                inputPos = Input.GetTouch(0).position;
+                return TheCamera.GetCamera().ScreenToWorldPoint(inputPos);
+            }
+            else if (Application.platform == RuntimePlatform.WindowsPlayer )
+            {
+                inputPos = Input.mousePosition;
+                return TheCamera.GetCamera().ScreenToWorldPoint(inputPos);
+            }
+            else
+            {
+                return Vector3.zero; // No input, return default to avoid warning
+            }
+
+            inputPos.z = 10f; // Distance from camera
+           
         }
+
 
         public Vector3 GetMousePosition()
         {
