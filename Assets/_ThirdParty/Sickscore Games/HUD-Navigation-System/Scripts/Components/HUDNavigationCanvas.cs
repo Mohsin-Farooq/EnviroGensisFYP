@@ -1,9 +1,8 @@
 ﻿using System.Linq;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine;	
 using UnityEngine.UI;
-using SickscoreGames;
+
 
 namespace SickscoreGames.HUDNavigationSystem
 {
@@ -49,6 +48,10 @@ namespace SickscoreGames.HUDNavigationSystem
 			}
 
 			_Instance = this;
+			DontDestroyOnLoad(this.gameObject);
+
+			// Hook into scene change event
+			SceneManager.sceneLoaded += OnSceneLoaded;
 		}
 
 
@@ -64,6 +67,27 @@ namespace SickscoreGames.HUDNavigationSystem
 			DontDestroyOnLoad (this.gameObject);
 			}
 		}
+		
+		void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+		{
+			// Only enable the HUD when in "EnviroGamePla" scene
+			if (scene.name == "EnviroGamePlay")
+			{
+				EnableCanvas(true);
+			}
+			else
+			{
+				EnableCanvas(false);
+			}
+		}
+		void OnDestroy()
+		{
+			if (_Instance == this)
+			{
+				SceneManager.sceneLoaded -= OnSceneLoaded;
+			}
+		}
+
       
 
 		/// <summary>
