@@ -1072,7 +1072,7 @@ MonoBehaviour:
   - soundType: 6
     clip: {fileID: 8300000, guid: 20f8537e455b1a945a15ba1a454c7517, type: 3}
   - soundType: 0
-    clip: {fileID: 8300000, guid: 403b922a1210aff4ab67f4bcc2b64627, type: 3}
+    clip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
 --- !u!4 &166900442
 Transform:
   m_ObjectHideFlags: 0
@@ -10583,7 +10583,7 @@ GameObject:
   - component: {fileID: 1675395410}
   - component: {fileID: 1675395409}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ScoreBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -61,12 +61,19 @@ public class WasteGameManager : MonoBehaviour
     public void GameOver()
     {
         Time.timeScale = 0f;
+        if (GeneralAudioManager.Instance != null)
+        {
+            GeneralAudioManager.Instance.PlaySound(SoundType.Fail);
+        }
         gameOverUI.SetActive(true);
     }
 
     public void ReloadLevel()
     {
-        //EditorSceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (GeneralAudioManager.Instance != null)
+        {
+            GeneralAudioManager.Instance.PlaySound(SoundType.Click);
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         gameOverUI.SetActive(false);
         RestartScoreValue();
