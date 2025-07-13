@@ -39,7 +39,7 @@ public class ButtonManager : MonoBehaviour
 
     public void AttributeDecrease()
     {
-        PlayerCharacterAttribute.instance.AddAttribute(AttributeType.Hunger,-20);
+        PlayerCharacterAttribute.instance.AddAttribute(AttributeType.Thirst,-20);
     }
     
     
