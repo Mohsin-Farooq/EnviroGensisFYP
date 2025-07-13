@@ -4684,7 +4684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 446069209}
   settingPanel: {fileID: 1793000028}
-  lifeCount: 1
+  lifeCount: 5
 --- !u!4 &1288263902
 Transform:
   m_ObjectHideFlags: 0
