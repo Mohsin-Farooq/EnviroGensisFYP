@@ -56,6 +56,10 @@ public class WasteGameManager : MonoBehaviour
 
     public void Resume()
     {
+        if (GeneralAudioManager.Instance != null)
+        {
+            GeneralAudioManager.Instance.PlaySound(SoundType.Click);
+        }
         Time.timeScale = 1f;
     }
 
@@ -88,6 +92,10 @@ public class WasteGameManager : MonoBehaviour
     {
         if(settingPanel != null)
         {
+            if(GeneralAudioManager.Instance != null)
+            {
+                GeneralAudioManager.Instance.PlaySound(SoundType.Click);
+            }
             settingPanel.SetActive(true);
             Time.timeScale = 0f;
         }
@@ -95,6 +103,10 @@ public class WasteGameManager : MonoBehaviour
 
     public void closeSetting()
     {
+        if (GeneralAudioManager.Instance != null)
+        {
+            GeneralAudioManager.Instance.PlaySound(SoundType.Click);
+        }
         if (settingPanel != null)
         {
             settingPanel.SetActive(false);
